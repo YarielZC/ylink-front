@@ -1,0 +1,18 @@
+:root {
+  /* Colores primarios */
+  --button-color: #137fec;  /* El azul brillante de los botones */
+  --button-color-hover: #1d4ed8;  /* Un azul un poco más oscuro para cuando pasas el mouse */
+  
+  /* Fondos (Modo oscuro) */ 
+  --dark-mode-background-color:#101922;  /* El fondo muy oscuro de toda la web */
+  --dark-mode-card-form-color:#192633;  /* El gris azulado de las tarjetas y formularios */
+  --dark-mode-input-color:#101922;  /* Fondo de los inputs */
+
+  /* Textos */ 
+  --header-color:#f8fafc;  /* Blanco casi puro para títulos */
+  --secondary-text-color:#94a3b8;  /* Gris claro para textos secundarios */ 
+  --error-message-color:#ef4444;  /* Rojo para mensajes de error */ 
+
+  /* Bordes */
+  --border-color:#35516c; /* Color para líneas sutiles (bordes) */
+}
