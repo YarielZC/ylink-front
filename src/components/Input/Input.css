@@ -1,0 +1,37 @@
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 0.3rem;
+}
+
+.input-label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+}
+
+.input-field{
+    background-color: #303a4b;
+    border: 0.1rem solid #3f5377;
+    border-radius: 1rem;
+    padding: 0.45rem;
+    color: white;
+    font-size: 0.8rem;
+    width: 100%; 
+    outline: none;
+}
+
+.input-field:focus {
+  border-color: #4299e1; 
+}
+
+.input-field.input-error {
+  border-color: #f37272;
+}
+
+.input-error-message {
+  font-size: 0.85rem;
+  color: #a25757; 
+  font-weight: 500;
+}
