@@ -1,17 +1,38 @@
-.btn-primary{
+.btn-primary {
   background-color: var(--button-color);
-  color: white;
-  padding: 5px;
-  box-shadow: 0px 1px 2px var(--button-color);
   border: solid 1px var(--button-color);
-  border-radius: 20px;
-  transition: all 0.5s ease;
+  color: white;
+  box-shadow: 0px 1px 2px var(--button-shadow-color);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: var(--button-color-hover);
   border: solid 1px var(--button-color-hover);
-  cursor: pointer;
-  box-shadow: 0px 1px 2px var(--button-color-hover);
+  box-shadow: 0px 1px 2px var(--button-shadow-color);
+}
+
+.btn-secondary {
+  background-color: #2b3440;  /* Azul grisáceo oscuro */
+  border: solid 1px #2b3440;
+  color: whitesmoke;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.btn-secondary:hover {
+  background-color: #3a4554;  /* Azul un poco más claro */
+  border: solid 1px #3a4554; 
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 20px;
+  min-width: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }

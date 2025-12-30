@@ -2,7 +2,8 @@
   /* Colores primarios */
   --button-color: #137fec;  /* El azul brillante de los botones */
   --button-color-hover: #1d4ed8;  /* Un azul un poco más oscuro para cuando pasas el mouse */
-  
+  --button-shadow-color: #137fec44;  /* Otro azul para la sombra */
+
   /* Fondos (Modo oscuro) */ 
   --dark-mode-background-color:#101922;  /* El fondo muy oscuro de toda la web */
   --dark-mode-card-form-color:#192633;  /* El gris azulado de las tarjetas y formularios */
