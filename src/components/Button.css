@@ -1,0 +1,19 @@
+.btn-primary{
+  background-color: var(--button-primary-color);
+  color: white;
+}
+
+.btn-primary:hover{
+  background-color: var(--button-primary-hover);
+  cursor: pointer;
+}
+
+.btn-secondary{
+  background-color: var(--button-secondary);
+  color: whitesmoke;
+}
+
+.btn-secondary:hover{
+  background-color: var(--button-secondary-hover);
+  cursor: pointer;
+}
