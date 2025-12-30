@@ -5,9 +5,13 @@
   box-shadow: 0px 1px 2px var(--button-color);
   border: solid 1px var(--button-color);
   border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
 .btn-primary:hover{
   background-color: var(--button-color-hover);
+  border: solid 1px var(--button-color-hover);
   cursor: pointer;
+  box-shadow: 0px 1px 2px var(--button-color-hover);
+  transform: scale(1.05);
 }
