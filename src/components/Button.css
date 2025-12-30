@@ -1,17 +1,37 @@
-.btn-primary{
+.btn-primary {
   background-color: var(--button-color);
-  color: white;
-  padding: 5px;
-  box-shadow: 0px 1px 2px var(--button-color);
   border: solid 1px var(--button-color);
-  border-radius: 20px;
-  transition: all 0.5s ease;
+  color: white;
+  box-shadow: 0px 1px 2px #1d4ed8;
+  padding: 0.7rem 1.5rem;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: var(--button-color-hover);
   border: solid 1px var(--button-color-hover);
-  cursor: pointer;
-  box-shadow: 0px 1px 2px var(--button-color-hover);
+  box-shadow: 0px 1px 2px var(--button-shadow-color);
+}
+
+.btn-secondary {
+  background-color: var(--button-secondary-color);
+  border: none;
+  color: whitesmoke;
+  padding: 0.2rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--button-secondary-color-hover);
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 20px;
+  min-width: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
