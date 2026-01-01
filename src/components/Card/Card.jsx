@@ -1,7 +1,7 @@
 
 import './Card.css'
 
-const Card = ({ children, className }) => {
+function Card({ children, className }) {
   return (<div className={`card  ${className || ``}`}>
     {children}
   </div >)
