@@ -1,11 +1,12 @@
 .input-container{
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.6rem;
+    position: relative;
 }
 
 .input-label{
-    font-size: 0.9rem;
+    font-size: 0.94rem;
     font-weight: 500;
     color: var(--header-color)
 }
@@ -13,11 +14,19 @@
 .input-field{
     background-color: var(--dark-mode-input-color);
     border: 0.1rem solid var(--border-color);
-    border-radius: 1rem;
-    padding: 0.45rem;
-    color: var(--secondary-text-color)
-    font-size: 0.8rem;
+    border-radius: 4rem;
+    padding: 0.8rem 1rem;
+    color: var(--secondary-text-color);
+    font-size: 0.94rem;
     outline: none;
+}
+
+.input-have-icon{
+    padding-left: 2rem;
+}
+
+.input-is-pass{
+    padding-right: 2.35rem;
 }
 
 .input-field:focus {
@@ -37,3 +46,23 @@
   margin-top: -0.1rem;
   gap: 0.3rem;
 }
+
+.input-icon{
+  position: absolute;
+  top: 2.45rem;
+  left: 0.4rem;
+}
+
+.eyePass{
+  position: absolute;
+  top: 2.45rem;
+  left: calc(100% - 2rem);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-text-color);
+}
+
+

@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { forwardRef } from "react";
-import { IconExclamationCircle } from "@tabler/icons-react";
+import { IconExclamationCircle, IconEye, IconEyeOff } from "@tabler/icons-react";
 import './Input.css'
 
 const Input = forwardRef((props, ref) => {
 
-    const { className, label, error, inputClassName, ...inputProps } = props;
+    const { className, label, error, inputClassName, inputIcon, type, ...inputProps } = props;
+    const [showPass, setShowPass] = useState(false)
+
+    const handleShowPassClick = () =>{
+        setShowPass(!showPass)
+    }
 
     return (
         <div className={`input-container ${className}`}>
@@ -16,11 +21,20 @@ const Input = forwardRef((props, ref) => {
                 </label>
             )}
 
+            <div className="input-icon">
+                {inputIcon}
+            </div>
+
+            {type=='password' && 
+            <button onClick={handleShowPassClick} className="eyePass">
+                {showPass ? <IconEye/> : <IconEyeOff/>}
+            </button>}
+            
             <input
                 ref={ref} 
                 id={inputProps.name}
-                className={`input-field ${inputClassName || ''} ${error ? 'input-error' : ''}`}
-                inputClassName
+                className={`input-field ${type=='password' ? 'input-is-pass' : ''} ${inputIcon ? 'input-have-icon' : ''} ${inputClassName || ''} ${error ? 'input-error' : ''}`}
+                type={showPass ? 'text' : type}
                 {...inputProps} 
             />
 
