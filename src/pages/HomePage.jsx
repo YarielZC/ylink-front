@@ -1,5 +1,17 @@
+import Input from "../components/Input/Input";
+
 function HomePage() {
-    return <h1>HomePage</h1>
+    return (
+        <Input
+            label='Este es un label'
+            type='text'
+            placeholder='Esto es un placeholder'
+            error='Esto es un error'
+        />
+    )
+
+
+
 }
 
 export default HomePage;
