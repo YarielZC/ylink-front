@@ -1,37 +1,39 @@
 .input-container{
     display: flex;
     flex-direction: column;
-    width: fit-content;
     gap: 0.3rem;
 }
 
 .input-label{
     font-size: 0.9rem;
-    font-weight: 600;
-    color: rgb(50, 50, 50);
+    font-weight: 500;
+    color: var(--header-color)
 }
 
 .input-field{
-    background-color: #303a4b;
-    border: 0.1rem solid #3f5377;
+    background-color: var(--dark-mode-input-color);
+    border: 0.1rem solid var(--border-color);
     border-radius: 1rem;
     padding: 0.45rem;
-    color: white;
+    color: var(--secondary-text-color)
     font-size: 0.8rem;
-    width: 100%; 
     outline: none;
 }
 
 .input-field:focus {
-  border-color: #4299e1; 
+  border-color: var(--button-color); 
 }
 
 .input-field.input-error {
-  border-color: #f37272;
+  border-color: var(--error-message-color);
 }
 
 .input-error-message {
+  display: flex;
+  align-items: center;
   font-size: 0.85rem;
-  color: #a25757; 
+  color:var(--error-message-color); 
   font-weight: 500;
+  margin-top: -0.1rem;
+  gap: 0.3rem;
 }

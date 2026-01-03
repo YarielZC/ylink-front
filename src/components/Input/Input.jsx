@@ -1,13 +1,14 @@
 import React from "react";
 import { forwardRef } from "react";
+import { IconExclamationCircle } from "@tabler/icons-react";
 import './Input.css'
 
 const Input = forwardRef((props, ref) => {
 
-    const { label, error, ...inputProps } = props;
+    const { className, label, error, inputClassName, ...inputProps } = props;
 
     return (
-        <div className="input-container">
+        <div className={`input-container ${className}`}>
 
             {label && (
                 <label htmlFor={inputProps.name} className="input-label">
@@ -18,12 +19,17 @@ const Input = forwardRef((props, ref) => {
             <input
                 ref={ref} 
                 id={inputProps.name}
-                className={`input-field ${error ? 'input-error' : ''}`}
+                className={`input-field ${inputClassName || ''} ${error ? 'input-error' : ''}`}
+                inputClassName
                 {...inputProps} 
             />
 
             {error && (
                 <span className="input-error-message">
+                    <IconExclamationCircle
+                        size={16}
+                        color="#ef4444"
+                    />
                     {error.message || error} 
                 </span>
             )}
