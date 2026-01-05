@@ -1,12 +1,11 @@
-import './Loader.css'
 
-function Loader() {
+function Loader({ className }) {
 
   return (
-    <div >
-      <div className='spinner' >
-      </div>
+
+    <div className={`spinner ${className || ``}`} >
     </div>
+
   )
 
 }
