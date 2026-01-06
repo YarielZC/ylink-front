@@ -1,4 +1,3 @@
-import Loader from "../components/Loader/Loader";
 
 function HomePage() {
     return <>
