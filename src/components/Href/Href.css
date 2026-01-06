@@ -1,5 +1,5 @@
 .Href a {
-  color: rgb(39, 113, 217);
+  color: #2771d9;
   text-decoration: none;
   transition: all 0.5s ease;
 }
@@ -9,5 +9,5 @@
 }
 
 .Href a:active {
-  color: blue;
+  color: #0000ff;
 }
