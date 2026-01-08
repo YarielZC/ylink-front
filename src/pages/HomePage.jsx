@@ -1,6 +1,7 @@
 
 function HomePage() {
     return <>
+        <Loader></Loader>
         <h1>HomePage</h1>
     </>
 }

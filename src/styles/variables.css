@@ -18,4 +18,8 @@
 
   /* Bordes */
   --border-color:#35516c; /* Color para líneas sutiles (bordes) */
+
+  /*Loader*/
+  --loader-color:#00f ; /* Azul sofisticado */
+ 
 }
