@@ -3,15 +3,15 @@
   transition: all 0.3s ease;
 }
 
-.Href a.blue{
+.Href a.blue {
   color: #2771d9;
 }
 
-.Href a.white{
+.Href a.white {
   color: #f5f5f5;
 }
 
-.Href a.decoration{
+.Href a.decoration:hover {
 text-decoration: underline;
 }
 
