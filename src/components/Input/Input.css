@@ -30,7 +30,7 @@
 }
 
 .input-field:focus {
-  border-color: var(--button-color); 
+  border-color: var(--primary-button-color); 
 }
 
 .input-field.input-error {

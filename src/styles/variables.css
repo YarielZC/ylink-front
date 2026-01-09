@@ -1,14 +1,14 @@
 :root {
   /* Colores de botón primario y secondario */
-  --button-color: #137fec;  /* El azul brillante de los botones */
-  --button-color-hover: #1d4ed8;  /* Un azul un poco más oscuro para cuando pasas el mouse */
-  --button-secondary-color: #314c66; /* Azul grisáceo oscuro */
-  --button-secondary-hover-color: #415f7c; /* Color más oscuro para cuando pasas el mouse */
+  --primary-button-color: #137fec;  /* El azul brillante de los botones */
+  --primary-button-hover-color: #1d4ed8;  /* Un azul un poco más oscuro para cuando pasas el mouse */
+  --secondary-button-color: #314c66; /* Azul grisáceo oscuro */
+  --secondary-button-hover-color: #415f7c; /* Color más oscuro para cuando pasas el mouse */
   --button-shadow-color: #137fec44;  /* Otro azul para la sombra */
 
   /* Fondos (Modo oscuro) */ 
   --dark-mode-background-color:#101922;  /* El fondo muy oscuro de toda la web */
-  --dark-mode-card-form-color:#192633;  /* El gris azulado de las tarjetas y formularios */
+  --dark-mode-card-form-color:#192633;  /* Gris azulado para tarjetas y formularios */
   --dark-mode-input-color:#101922;  /* Fondo de los inputs */
 
   /* Textos */ 

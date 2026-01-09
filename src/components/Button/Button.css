@@ -1,26 +1,26 @@
 .btn-primary {
-  background-color: var(--button-color);
-  border: solid 1px var(--button-color);
+  background-color: var(--primary-button-color);
+  border: solid 1px var(--primary-button-color);
   color: white;
   box-shadow: 0px 7px 16px var(--button-shadow-color);
   padding: 0.7rem 1.5rem;
 }
 
 .btn-primary:hover {
-  background-color: var(--button-color-hover);
-  border: solid 1px var(--button-color-hover);
+  background-color: var(--primary-button-color-hover);
+  border: solid 1px var(--primary-button-color-hover);
   box-shadow: 0px 7px 16px var(--button-shadow-color);
 }
 
 .btn-secondary {
-  background-color: var(--button-secondary-color);
+  background-color: var(--secondary-button-color);
   border: none;
   color: whitesmoke;
   padding: 0.7rem 1.5rem;
 }
 
 .btn-secondary:hover {
-  background-color: var(--button-secondary-hover-color);
+  background-color: var(--secondary-button-hover-color);
 }
 
 .btn-primary,
