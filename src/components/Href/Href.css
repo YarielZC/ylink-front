@@ -1,0 +1,20 @@
+.Href a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.Href a.blue {
+  color: #2771d9;
+}
+
+.Href a.white {
+  color: #f5f5f5;
+}
+
+.Href a.decoration:hover {
+text-decoration: underline;
+}
+
+.Href a:active {
+  color: #0000ff;
+}
