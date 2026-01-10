@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { forwardRef } from "react";
 import { IconExclamationCircle, IconEye, IconEyeOff } from "@tabler/icons-react";
 import './Input.css'
 
-const Input = forwardRef((props, ref) => {
-  const { className, label, error, inputClassName, inputIcon, type, ...inputProps } = props;
+export default function Input ({ className, label, error, inputClassName, inputIcon, ref, type, ...inputProps }) {
   const [showPass, setShowPass] = useState(false)
 
   const handleShowPassClick = () =>{
@@ -48,6 +46,4 @@ const Input = forwardRef((props, ref) => {
       )}
     </div>
   )
-})
-
-export default Input;
+}
