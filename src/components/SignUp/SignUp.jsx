@@ -1,4 +1,7 @@
 import { useForm } from "react-hook-form"
+import Card from "../Card/Card";
+import { IconUserFilled, IconAt, IconLockFilled } from "@tabler/icons-react";
+import './SignUp.css'
 
 const SignUp =()=>{
  const{
@@ -12,72 +15,77 @@ const SignUp =()=>{
  }
 
  return(
-  <div className="signup-form">
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="form-group">
-        <label htmlFor="username">Nombre de usuario</label>
-        <input 
-          id="username"
-          type="text"
-          placeholder="Escribe tu nombre de usuario"
-          {...register("username",{
-            required: "Este campo es obligatorio",
-            minLength: {
-             value: 3,
-              message: "Mínimo 3 caracteres"
-            },
-            maxLength:{
-              value: 18,
-              message: "Máximo 18 caracteres"
-            }
-          })}
-        />
-        error={errors.username}
-      </div>
-
-      <div className="form-group">
-        <label htmlFor="email">Correo electrónico</label>
-        <input
-          id="email"
-          type="email"
-          placeholder="Ingrese su correo electrónico"
-          {...register("email",{
-            required:"Este campo es obligatorio"
-            pattern: {
-              value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-              message: "El formato del email no es correcto (ej: hola@ylink.com)"
-            }
-          })}
+  <div className="signup-container">
+    <Card className="signup-form">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="form-group">
+          <label htmlFor="username">Username</label>
+          <IconUserFilled className="user-icon" size={18}/>
+          <input 
+            id="username"
+            type="text"
+            placeholder="johndoe"
+            {...register("username",{
+              required: "This field is required",
+              minLength: {
+                value: 3,
+                message: "Minimum 3 characters"
+              },
+              maxLength:{
+                value: 18,
+                message: "Maximum 18 characters"
+              }
+            })}
+            error={errors.username}
           />
-          error={errors.email}
-      </div>
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="password">Contraseña</label>
-        <input
-          id="password"
-          type="password"
-          placeholder="Ingresa tu contraseña"
-          {...register("password",{
-            required:"Este campo es obligatorio",
-            minLength:{
-              value:6,
-              message:"Mínimo 6 caracteres"
-            },
-            maxLength:{
-              value:20,
-              message:"Máximo 20 caracteres"
-            }
-          })}
-        />
-        error={errors.password}
-      </div>
+        <div className="form-group">
+          <label htmlFor="email">Email address</label>
+          <IconAt className="at-icon" size={18}/>
+          <input
+            id="email"
+            type="email"
+            placeholder="name@company.com"
+            {...register("email",{
+              required:"This field is required",
+              pattern: {
+                value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                message: "The email format is incorrect (e.g., hola@ylink.com)"
+              }
+            })}
+            error={errors.email}
+            />
+        </div>
 
-      <button type="signup" className="signup-btn">
-        SignUp
-      </button>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <IconLockFilled className="lock-icon" size={18}/>
+          <input
+            id="password"
+            type="password"
+            placeholder="Create a password"
+            {...register("password",{
+              required:"This field is required",
+              minLength:{
+                value:6,
+                message:"Minimum 6 characters"
+              },
+              maxLength:{
+                value:20,
+                message:"Maximum 20 characters"
+              }
+            })}
+            error={errors.password}
+          />
+        </div>
 
-    </form>
+        <button type="submit" className="signup-btn">
+          Sign Up
+        </button>
+
+      </form>
+    </Card>
   </div>
  )
 

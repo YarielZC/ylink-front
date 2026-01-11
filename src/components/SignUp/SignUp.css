@@ -1,0 +1,63 @@
+.signup-container{
+  position:absolute;
+  top:30%;
+  left: 40%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap:0.3rem;
+}
+
+label{
+  color: var(--header-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+input{
+  background-color: var(--dark-mode-input-color);
+  color: var(--secondary-text-color);
+  border: 0.05rem solid var(--border-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  padding-left: 1.9rem;
+}
+
+button{
+  padding: 0.5rem;
+  background-color: var(--primary-button-color);
+  border: 0.05rem solid transparent;
+  border-radius: 1rem;
+  color: var(--header-color);
+  width: 100%;
+  margin-top: 0.6rem;
+}
+
+.user-icon{
+  position: absolute;
+  top: 3.25rem;
+  left: 2rem;
+}
+
+.at-icon{
+  position: absolute;
+  top: 7.30rem;
+  left: 2rem;
+}
+
+.lock-icon{
+  position: absolute;
+  top: 11.30rem;
+  left: 2rem;
+}
