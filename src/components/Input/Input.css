@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 0.6rem;
   position: relative;
+  width: 100%;
 }
 
 .input-label{
@@ -22,7 +23,7 @@
 }
 
 .input-have-icon{
-  padding-left: 2rem;
+  padding-left: 2.3rem;
 }
 
 .input-is-pass{
@@ -50,17 +51,18 @@
 .input-icon{
   position: absolute;
   top: 2.45rem;
-  left: 0.4rem;
+  left: 0.7rem;
 }
 
 .eyePass{
   position: absolute;
-  top: 2.45rem;
-  left: calc(100% - 2rem);
+  top: 1.4rem;
+  left: calc(100% - 3rem);
   background-color: transparent;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--secondary-text-color);
+  width: fit-content;
 }

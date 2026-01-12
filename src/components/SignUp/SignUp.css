@@ -1,0 +1,38 @@
+.signup-container{
+  position:absolute;
+  top:25%;
+  left: 40%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap:0.3rem;
+}
+
+.input-field[type="password"]::-ms-reveal,
+.input-field[type="password"]::-ms-clear {
+  display: none;
+}
+
+button{
+  padding: 0.5rem;
+  background-color: var(--primary-button-color);
+  border: 0.05rem solid transparent;
+  border-radius: 1rem;
+  color: var(--header-color);
+  width: 100%;
+  margin-top: 0.6rem;
+}
+
+.eyePass{
+  padding-right: 15rem;
+}
