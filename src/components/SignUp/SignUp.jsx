@@ -19,33 +19,30 @@ const SignUp =()=>{
   <div className="signup-container">
     <Card className="signup-form">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-group">
-              <Input
-                label={"Username"}
-                type="text"
-                inputIcon={<IconUserFilled size={18}/>}
-                placeholder="johndoe"
-                name="username"
-                {...register("username",{
-                  required: "This field is required",
-                  minLength: {
-                    value: 3,
-                    message: "Minimum 3 characters"
-                  },
-                  maxLength:{
-                    value: 18,
-                    message: "Maximum 18 characters"
-                  }
-                })}
-                error={errors.username}
-              />
-        </div>
+        <Input
+          label={"Username"}
+            type="text"
+            inputIcon={<IconUserFilled/>}
+            placeholder="johndoe"
+            name="username"
+            {...register("username",{
+              required: "This field is required",
+              minLength: {
+                value: 3,
+                message: "Minimum 3 characters"
+              },
+              maxLength:{
+                value: 18,
+                message: "Maximum 18 characters"
+              }
+            })}
+            error={errors.username}
+        />
 
-        <div className="form-group">
               <Input
                 label={"Email Address"}
                 type="email"
-                inputIcon={<IconAt size={18}/>}
+                inputIcon={<IconAt/>}
                 placeholder="name@company.com"
                 name="email"
                 {...register("email",{
@@ -57,13 +54,11 @@ const SignUp =()=>{
                 })}
                 error={errors.email}
               />
-        </div>
 
-        <div className="form-group">
               <Input
                 label={"Password"}
                 type="password"
-                inputIcon={<IconLockFilled size={18}/>}
+                inputIcon={<IconLockFilled/>}
                 placeholder="Create a password"
                 name="password"
                 {...register("password",{
@@ -79,7 +74,6 @@ const SignUp =()=>{
                 })}
                 error={errors.password}
               />
-        </div>
 
         <button type="submit" className="signup-btn">
           Sign Up
