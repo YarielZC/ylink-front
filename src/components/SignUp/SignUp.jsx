@@ -11,9 +11,27 @@ const SignUp =()=>{
   formState: {errors}
  }=useForm();
 
- const onSubmit = (data) =>{
-  console.log("Registrando", data)
- }
+const onSubmit = async (data) => {
+  try {
+    const userData = {
+      username: data.username,
+      email: data.email,
+      password: data.password
+    };
+
+    const response = await apiFetch('/users', {
+      method: 'POST',
+      body: JSON.stringify(userData)
+    });
+
+      console.log("Respuesta del servidor:", response);
+
+
+  } catch (error) {
+    console.error("Algo salió mal:", error);
+    alert("Error al registrar. Por favor, inténtalo de nuevo.");
+  }
+};
 
  return(
   <div className="signup-container">
