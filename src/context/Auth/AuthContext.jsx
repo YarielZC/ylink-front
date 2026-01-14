@@ -33,7 +33,7 @@ body: JSON.stringify(credentials));
       }
       const loginData = await response.json();
       const { token } = loginData;
-      login(userData, token);
+      registerLoginData(userData, token);
     } catch (e) {
       console.error(e.message);
     }
