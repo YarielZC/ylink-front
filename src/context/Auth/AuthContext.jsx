@@ -2,7 +2,7 @@ import { AuthContext } from "./ExportAuthContext";
 import { useState, useEffect } from "react";
 
 export default function AuthProvider({ children }) {
-  const API_URL = "apiDeEjemplo";
+  const API_URL = "https://fakestoreapi.com";
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [token, setToken] = useState("");
@@ -22,8 +22,12 @@ export default function AuthProvider({ children }) {
     if (!user || !pass) {
       throw new Error("Credenciales inválidas");
     }
+    const credentials = { username: `${user}`, password: `${pass}` };
     try {
-      const response = await fetch({API_URL});
+      const response = await fetch(`${API_URL}/auth/login`,
+method: 'POST',
+headers:{'Content-Type': 'application/json'},
+body: JSON.stringify(credentials));
       if (!response.ok) {
         throw new Error("Failed to fetch");
       }
