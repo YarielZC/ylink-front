@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 import { IconUserFilled, IconAt, IconLockFilled } from "@tabler/icons-react";
 import './SignUp.css'
 import Input from "../Input/Input";
+import { apiFetch } from "../../services/api";
 
 const SignUp =()=>{
  const{
