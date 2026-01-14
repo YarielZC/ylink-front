@@ -32,7 +32,7 @@ body: JSON.stringify(credentials));
         throw new Error("Failed to fetch");
       }
       const loginData = await response.json();
-      const { userData, token } = loginData;
+      const { token } = loginData;
       login(userData, token);
     } catch (e) {
       console.error(e.message);
