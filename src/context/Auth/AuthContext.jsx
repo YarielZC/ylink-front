@@ -24,10 +24,11 @@ export default function AuthProvider({ children }) {
     }
     const credentials = { username: `${user}`, password: `${pass}` };
     try {
-      const response = await fetch(`${API_URL}/auth/login`,
-method: 'POST',
-headers:{'Content-Type': 'application/json'},
-body: JSON.stringify(credentials));
+      const response = await fetch(`${API_URL}/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(credentials),
+      });
       if (!response.ok) {
         throw new Error("Failed to fetch");
       }
