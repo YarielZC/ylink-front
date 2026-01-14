@@ -23,7 +23,7 @@ export default function AuthProvider({ children }) {
       throw new Error("Credenciales inválidas");
     }
     try {
-      const response = await fetch(API_URL);
+      const response = await fetch({API_URL});
       if (!response.ok) {
         throw new Error("Failed to fetch");
       }
