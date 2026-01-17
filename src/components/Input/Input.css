@@ -66,3 +66,23 @@
   color: var(--secondary-text-color);
   width: fit-content;
 }
+
+/* ESSENTIAL AUTOFILL FIX - ALL BROWSERS */
+.input-field:-webkit-autofill {
+ 
+  -webkit-text-fill-color: var(--secondary-text-color) !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--dark-mode-input-color) inset !important;
+}
+
+.input-field:autofill {
+ 
+  background-color: var(--dark-mode-input-color) !important;
+  color: var(--secondary-text-color) !important;
+}
+
+/* Firefox fix */
+.input-field:-moz-autofill {
+  
+  background-color: var(--dark-mode-input-color) !important;
+  color: var(--secondary-text-color) !important;
+}

@@ -1,0 +1,41 @@
+.login-container{
+  width: 34%;
+  height: 40%;
+  margin: 10% auto auto auto;
+  padding: 0;
+}
+
+.login-card {
+  padding: 1% 10% 9% 10% !important;
+  width: 100% !important;
+}
+
+.login-input,.login-button{
+  margin: 10% auto 5% auto;
+  border-radius: 3rem ;
+  height: 40px ;
+  width: 95%;
+
+}
+
+.login-button{
+  box-shadow: 
+  0 4px 15px rgba(59, 130, 246, 0.4),
+  0 0 0 1px rgba(59, 130, 246, 0.1) inset;
+  margin-top: 13%;
+}
+
+.form{
+  margin-bottom: 0%;
+}
+
+.login-signup-p{
+  margin-top: 4%;
+  font-size: 14px;
+  text-align: center;
+}
+
+a{
+   color:var(--primary-button-color);
+   text-decoration: none;
+}
