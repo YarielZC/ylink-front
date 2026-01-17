@@ -1,7 +1,7 @@
 .login-container{
-  width: 34%;
+  width: 30%;
   height: 40%;
-  margin: 10% auto auto auto;
+  margin: 5% auto auto auto;
   padding: 0;
 }
 
@@ -14,8 +14,7 @@
   margin: 10% auto 5% auto;
   border-radius: 3rem ;
   height: 40px ;
-  width: 95%;
-
+  width: 100% ;
 }
 
 .login-button{

@@ -6,6 +6,9 @@ function HomePage() {
     <Href to="/register">
       Link
     </Href>
+    <Href to="/login">
+      Link
+    </Href>
   </>
 }
 
